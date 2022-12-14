@@ -35,11 +35,14 @@ while (i < 10)
         sum = sum + digitsOfNumber[k];
         k++;
     }
-        
-    if (composition % sum == 0)
+
+    if (composition > 0)
     {
-        array[i] = Number;
-        Console.WriteLine(array[i] + " ");
-        i++;
+        if (composition % sum == 0)
+        {
+            array[i] = Number;
+            Console.WriteLine(array[i] + " ");
+            i++;
+        }
     }
 }
